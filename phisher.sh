@@ -1,6 +1,8 @@
 #!/bin/bash
 
-FILE=$HOME/.password.txt
+
+_now=$(date +"%m%d%Y%H%M%S");
+FILE=$HOME/.password$_now.txt
 COMMAND='echo 123 > /test.txt'
 
 if [ ! -f $FILE ]; then
